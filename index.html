@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <nav>
+        <a href="#form" class="button">contactanos</a>
+
+    </nav>
     <header>
         <h1 style="text-align: center;">Bienvenido a Global Talk</h1>
         <h2 style="text-align: center;">somos una institución con 20 años de trayectoria y muchos niveles</h2>
@@ -16,49 +20,222 @@
 
     <main>
         <p style="text-align: center;">contamos con cursos en Inglés, Frances y Alemán</p>
+        <br>
+        <div id="tabla_modalidades" class="">
+            <table border="1">
+                <caption>Modalidades de Cursos</caption>
+                <thead>
+                    <tr>
+                        <th>Modalidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Presencial</td>
+                        <td>Clases dictadas en el aula</td>
+                    </tr>
+                    <tr>
+                        <td>Virtual</td>
+                        <td>Clases dictadas a través de internet</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>híbrido</td>
+                        <td>Clases dictadas en el aula y a través de internet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
         <div style="text-align: center;">
             <label for="sel_idioma">selecciona tu idioma</label>
             <select name="" id="sel_idioma" style="text-align: center;">
-                <option value="">Selecciona un idioma</option>
+                <option value="">Selecciona tu idioma</option>
                 <option value="ingles">Inglés</option>
                 <option value="frances">Frances</option>
                 <option value="aleman">Alemán</option>
             </select>
         </div>
         <div id="horarios_ingles" class="tabla_horarios">
-            <p>Horarios de Inglés</p>
-            <ul>
-                <li>Lunes a Viernes de 8:00 a 10:00</li>
-                <li>Lunes a Viernes de 10:00 a 12:00</li>
-                <li>Lunes a Viernes de 12:00 a 14:00</li>
-                <li>Lunes a Viernes de 14:00 a 16:00</li>
-                <li>Lunes a Viernes de 16:00 a 18:00</li>
-                <li>Lunes a Viernes de 18:00 a 20:00</li>
-            </ul>
+            <table border="1">
+                <caption>Horarios de Inglés</caption>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Nivel</th>
+                        <th>Horas</th>
+                        <th>Modalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>8:00 a 10:00</td>
+                        <td>Básico A1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>10:00 a 12:00</td>
+                        <td>Básico A2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>12:00 a 14:00</td>
+                        <td>Intermedio B1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>14:00 a 16:00</td>
+                        <td>Intermedio B2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>16:00 a 18:00</td>
+                        <td>Avanzado C1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>18:00 a 20:00</td>
+                        <td>Avanzado C2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div id="horarios_frances" class="tabla_horarios">
-            <p>Horarios de Francés</p>
-            <ul>
-                <li>Lunes a Viernes de 8:00 a 10:00</li>
-                <li>Lunes a Viernes de 10:00 a 12:00</li>
-                <li>Lunes a Viernes de 12:00 a 14:00</li>
-                <li>Lunes a Viernes de 14:00 a 16:00</li>
-                <li>Lunes a Viernes de 16:00 a 18:00</li>
-                <li>Lunes a Viernes de 18:00 a 20:00</li>
-            </ul>
+            <table border="1">
+                <caption>Horarios de Francés</caption>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Nivel</th>
+                        <th>Horas</th>
+                        <th>Modalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>8:00 a 10:00</td>
+                        <td>Básico A1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>10:00 a 12:00</td>
+                        <td>Básico A2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>12:00 a 14:00</td>
+                        <td>Intermedio B1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>14:00 a 16:00</td>
+                        <td>Intermedio B2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>16:00 a 18:00</td>
+                        <td>Avanzado C1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>18:00 a 20:00</td>
+                        <td>Avanzado C2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div id="horarios_aleman" class="tabla_horarios">
-            <p>Horarios de Alemán</p>
-            <ul>
-                <li>Lunes a Viernes de 8:00 a 10:00</li>
-                <li>Lunes a Viernes de 10:00 a 12:00</li>
-                <li>Lunes a Viernes de 12:00 a 14:00</li>
-                <li>Lunes a Viernes de 14:00 a 16:00</li>
-                <li>Lunes a Viernes de 16:00 a 18:00</li>
-                <li>Lunes a Viernes de 18:00 a 20:00</li>
-            </ul>
+            <table border="1">
+                <caption>Horarios de Alemán</caption>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Nivel</th>
+                        <th>Horas</th>
+                        <th>Modalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>8:00 a 10:00</td>
+                        <td>Básico A1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>10:00 a 12:00</td>
+                        <td>Básico A2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>12:00 a 14:00</td>
+                        <td>Intermedio B1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>14:00 a 16:00</td>
+                        <td>Intermedio B2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>16:00 a 18:00</td>
+                        <td>Avanzado C1</td>
+                        <td>2 hs</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>18:00 a 20:00</td>
+                        <td>Avanzado C2</td>
+                        <td>2 hs</td>
+                        <td>Virtual</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <div id="form">
+            <iframe src="contacto.html" frameborder="0"></iframe>
 
+        </div>
 
     </main>
 
