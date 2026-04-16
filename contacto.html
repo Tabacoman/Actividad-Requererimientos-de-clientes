@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
 </head>
+
 <body>
-<form action="/enviar" method="POST">
-    <fieldset>
-        <legend>
-            <h1>Formulario de inscripción</h1>
-        </legend>
+    <form action="enviar.html">
+        <fieldset>
+            <legend>
+                <h1>Formulario de inscripción</h1>
+            </legend>
 
-        <label for="nombre">Nombre</label>
+            <label for="nombre">Nombre</label>
 
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <BR><BR>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="Teléfono" placeholder="+54 3496 123456">
+            <BR><BR>
+
+            <label for="idioma_de_interes">Idioma de interés</label>
+            <select name="idioma_de_interes" id="idioma_de_interes">
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="italiano">Italiano</option>
+            </select>
+            <BR><BR>
+
+            <label for="nivel_previo">Nivel previo</label>
+            <select name="nivel_previo" id="nivel_previo">
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+            <BR><BR>
+
+
+            <label>¿Pertenece a una empresa?</label><BR>
+            <input type="radio" id="empresa_si" name="empresa" value="si">
+            <label for="empresa_si">Sí</label><BR>
+            <input type="radio" id="empresa_no" name="empresa" value="no">
+            <label for="empresa_no">No</label>
+            <BR><BR>
+
+            <label>¿Desea comprar un pack grupal?</label><BR>
+            <input type="radio" id="pack_si" name="pack" value="si">
+            <label for="pack_si">Sí</label><BR>
+            <input type="radio" id="pack_no" name="pack" value="no">
+            <label for="pack_no">No</label>
+            <BR><BR>
+
+
+
+        </fieldset>
         <BR><BR>
 
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="Teléfono" placeholder="+54 3496 123456">
-        <BR><BR>
-
-        <label for="idioma_de_interes">Idioma de interés</label>
-        <select name="idioma_de_interes" id="idioma_de_interes">
-            <option value="ingles">Inglés</option>
-            <option value="frances">Francés</option>
-            <option value="italiano">Italiano</option>
-        </select>
-        <BR><BR>
-
-        <label for="nivel_previo">Nivel previo</label>
-        <select name="nivel_previo" id="nivel_previo">
-            <option value="principiante">Principiante</option>
-            <option value="intermedio">Intermedio</option>
-            <option value="avanzado">Avanzado</option>
-        </select>
-        <BR><BR>
-
-
-        <label>¿Pertenece a una empresa?</label><BR>
-        <input type="radio" id="empresa_si" name="empresa" value="si">
-        <label for="empresa_si">Sí</label><BR>
-        <input type="radio" id="empresa_no" name="empresa" value="no">
-        <label for="empresa_no">No</label>
-        <BR><BR>
-
-        <label>¿Desea comprar un pack grupal?</label><BR>
-        <input type="radio" id="pack_si" name="pack" value="si">
-        <label for="pack_si">Sí</label><BR>
-        <input type="radio" id="pack_no" name="pack" value="no">
-        <label for="pack_no">No</label>
-        <BR><BR>
-
-
-
-    </fieldset>
-    <BR><BR>
-
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpiar</button>
-</form>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
 </body>
+
 </html>
