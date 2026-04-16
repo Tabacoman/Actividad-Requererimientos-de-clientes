@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mensaje de confirmación</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Gracias por tu inscripción</h1>
-    <p>Hemos recibido tu solicitud y nos pondremos en contacto contigo a la brevedad</p>
-    <button onclick="window.top.location.reload()">Volver al inicio</button>
+    <h1 class="top_confirmacion">Gracias por tu inscripción</h1>
+    <p class="top_confirmacion">Hemos recibido tu solicitud y nos pondremos en contacto contigo a la brevedad</p>
+    <button id="boton_reinicio" class="top_confirmacion" onclick="window.top.location.reload()">Volver al
+        inicio</button>
 
 
-    <div>
+    <div id="mensaje_confirmacion">
         <div id="horarios_secretaria" class="tabla_horarios">
             <table border="1">
                 <caption>Horarios de Secretaría</caption>
@@ -34,13 +36,13 @@
                     </tr>
                 </tbody>
             </table>
-            <br>
-            <address>
-                <p>Dirección: Calle Falsa 123</p>
-                <p>Teléfono: 123456789</p>
-                <p>Email: [EMAIL_ADDRESS]</p>
-            </address>
         </div>
+        <br>
+        <address>
+            <p>Dirección: Calle Falsa 123</p>
+            <p>Teléfono: 123456789</p>
+            <p>Email: [EMAIL_ADDRESS]</p>
+        </address>
     </div>
 </body>
 
