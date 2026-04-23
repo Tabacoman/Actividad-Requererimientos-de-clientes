@@ -27,9 +27,13 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 25px;
     background: linear-gradient(135deg, var(--celeste-4), var(--celeste-5));
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -145,6 +149,8 @@ table {
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
+    margin-top: 20px;
+    ;
 }
 
 th {
@@ -175,18 +181,6 @@ address {
     font-size: x-large;
 }
 
-select,
-label,
-input {
-    color: black;
-    width: 25%;
-    font-size: large;
-}
-
-select {
-    margin-left: 12.5px;
-}
-
 caption {
     font-size: x-large;
     margin: 10px;
@@ -204,25 +198,58 @@ footer {
 
 iframe {
     width: 100%;
-    height: 100vh;
+    height: 850px;
     border: none;
+    overflow: hidden;
 }
 
-.top_confirmacion {
-    margin-top: 10px;
+.text-center {
     text-align: center;
-    font-size: x-large;
 }
 
-#boton_reinicio {
+.styled-select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--celeste-3);
     margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+    outline: none;
+}
+
+.confirmacion-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
     text-align: center;
-    font-size: x-large;
-    margin: 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-left: 45%;
+}
+
+.confirmacion-card h1 {
+    color: var(--celeste-6);
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.confirmacion-card>p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.confirmacion-card address {
+    margin: 25px 0;
+    font-style: normal;
+    font-size: 1.1em;
+    color: var(--celeste-6);
+}
+
+.confirmacion-card address p {
+    margin: 5px 0;
+    font-size: 1em;
 }
 
 .tabla_horarios {
@@ -231,7 +258,117 @@ iframe {
     justify-content: center;
 }
 
-#form {
+/* Form Styles */
+.form-wrapper {
     display: flex;
     justify-content: center;
+    padding: 20px;
+}
+
+#contact_form {
+    width: 100%;
+    max-width: 600px;
+}
+
+#contact_form fieldset {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#contact_form legend h1 {
+    font-size: 1.8em;
+    color: var(--celeste-6);
+    margin-bottom: 10px;
+    padding: 0 10px;
+    margin-top: -10px;
+    /* Adjust legend spacing */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--celeste-6);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select {
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #b3e5fc;
+    outline: none;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--celeste-5);
+    box-shadow: 0 0 8px var(--celeste-3);
+}
+
+.radio-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-options input[type="radio"] {
+    transform: scale(1.2);
+    margin: 0;
+    cursor: pointer;
+}
+
+.radio-options label {
+    font-weight: normal;
+    color: inherit;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-actions button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    min-width: 150px;
+}
+
+#imagen {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-titles h1,
+.header-titles h2 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#nombre-empresa {
+    font-size: 4.5em;
+}
+
+#slogan {
+    font-size: 2em;
 }
