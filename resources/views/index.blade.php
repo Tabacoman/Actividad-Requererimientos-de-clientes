@@ -4,13 +4,11 @@
     <div class="container">
 
         <header>
-            <div id="imagen"><img src="Logo Global Talk.png" alt="Logo de Global Talk"></div>
+            <div id="imagen"><img src="{{ asset('css/Logo Global Talk.png') }}" alt="Logo de Global Talk"></div>
 
             <div class="header-titles">
                 <h2 id="slogan">Conectá con el mundo aprendiendo idiomas</h2>
-                <h2 id="slogan">Conectá con el mundo aprendiendo idiomas</h2>
                 <h1 id="nombre-empresa">Global Talk</h1>
-                <p class="mini-frase">Más de 20 años formando estudiantes</p>
                 <p class="mini-frase">Más de 20 años formando estudiantes</p>
             </div>
         </header>
@@ -57,9 +55,7 @@
 
             <section class="schedules-section">
                 <div class="text-center">
-                    <label for="sel_idioma" style="font-size: 1.2em; font-weight: bold; color: var(--celeste-6);">Selecciona
-                        tu
-                        idioma</label>
+                    <label for="sel_idioma" style="font-size: 1.2em; font-weight: bold; color: var(--celeste-6);">Selecciona tu idioma</label>
                     <select name="sel_idioma" id="sel_idioma" class="styled-select">
                         <option value="">-- Seleccionar --</option>
                         <option value="ingles">Inglés</option>
