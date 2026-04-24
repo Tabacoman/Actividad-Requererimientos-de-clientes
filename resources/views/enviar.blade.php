@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('templates.base')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mensaje de confirmación</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+@section('title', 'mensaje de confirmación')
 
-<body>
+@section('content')
     <div class="form-wrapper">
         <div class="confirmacion-card">
             <h1>¡Gracias por tu inscripción!</h1>
@@ -45,10 +39,8 @@
             </div>
             
             <div class="form-actions" style="margin-top: 20px;">
-                <button onclick="window.top.location.reload()">Volver al inicio</button>
+                <button onclick="window.top.location.href='{{ route('home') }}'">Volver al inicio</button>
             </div>
         </div>
     </div>
-</body>
-
-</html>
+@endsection

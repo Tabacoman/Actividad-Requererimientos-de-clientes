@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('templates.base')
 
-<head>
-    <meta charset="UTF-8">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+@section('title', 'Contacto')
 
-<body>
+@section('content')
     <div class="form-wrapper">
-        <form action="enviar.html" id="contact_form">
+        <form action="{{ route('enviar') }}" id="contact_form">
             <fieldset>
                 <legend>
                     <h1>Formulario de inscripción</h1>
@@ -73,6 +68,4 @@
             </div>
         </form>
     </div>
-</body>
-
-</html>
+@endsection

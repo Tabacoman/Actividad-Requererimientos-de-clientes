@@ -33,7 +33,7 @@ header {
     gap: 25px;
     background: linear-gradient(135deg, var(--celeste-4), var(--celeste-5));
     color: white;
-    text-align: left;
+    text-align: center;
     padding: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -286,7 +286,6 @@ iframe {
     margin-bottom: 10px;
     padding: 0 10px;
     margin-top: -10px;
-    /* Adjust legend spacing */
 }
 
 .form-group {
@@ -371,4 +370,47 @@ iframe {
 
 #slogan {
     font-size: 2em;
+}
+
+.descripcion {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #0288d1;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.descripcion strong {
+    font-size: 1.3em;
+    color: #009ad6; 
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00a8e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0077b6;
+}
+
+.mini-frase {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #fafafa;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    margin-top: 30px;
 }

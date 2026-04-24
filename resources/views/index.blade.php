@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('templates.base')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Talk</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+@section('content')
     <div class="container">
 
         <header>
-            <div id="imagen"><img src="Logo Global Talk.png" alt="Logo de Global Talk"></div>
+            <div id="imagen"><img src="{{ asset('css\Logo Global Talk.png') }}" alt="Logo de Global Talk"></div>
+            
             <div class="header-titles">
-                <h2 id="slogan">Aprende idiomas facíl y rapido con</h2>
+                <h2 id="slogan">Conectá con el mundo aprendiendo idiomas</h2>
                 <h1 id="nombre-empresa">Global Talk</h1>
+                <p class="mini-frase">Más de 20 años formando estudiantes</p>
             </div>
         </header>
 
-        <nav>
-            <a href="#form" class="button">Contactanos</a>
-        </nav>
-
         <main>
+            <section class="welcome-section">
+                <p class="descripcion">
+                    <strong>Abrí la puerta a nuevas oportunidades.</strong><br>
+                    En Global Talk no solo aprendés un idioma, aprendés a conectar con el mundo.
+                    Clases dinámicas, profesores capacitados y una metodología pensada para que avances de verdad.
+                </p>
+                <a href="#form" class="cta-button">Quiero empezar</a>
+            </section>
             <section class="intro-section">
                 <p class="text-center">Contamos con cursos en Inglés, Francés y Alemán</p>
                 <div id="tabla_modalidades" class="tabla_container">
@@ -245,11 +243,13 @@
             </section>
 
             <section id="form" class="form-section">
-                <iframe src="contacto.html" scrolling="no"></iframe>
+                <iframe src="{{ route('contacto') }}" scrolling="no"></iframe>
             </section>
         </main>
     </div>
+@endsection
 
+@section('footer')
     <footer>
         <p>&copy; 2026 Global Talk. Todos los derechos reservados.</p>
     </footer>
@@ -261,7 +261,7 @@
         // Ocultar los horarios por defecto al cargar la página
         divs.forEach(div => div.style.display = 'none');
 
-        select.addEventListener('change', function () {
+        select.addEventListener('change', function() {
             // Ocultar todos los divs
             divs.forEach(div => div.style.display = 'none');
 
@@ -275,6 +275,4 @@
             }
         });
     </script>
-</body>
-
-</html>
+@endsection
